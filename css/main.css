@@ -1,0 +1,255 @@
+/* ------ GRID ------ */
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+}
+
+.half-width {
+	float: left;
+    width: 50%;
+	box-sizing: border-box;
+}
+
+.third-width {
+   	float: left;
+	width: 100%;
+}
+
+
+
+
+
+/* ------ BASIC STYLES ------ */
+body {
+	background: #262526;
+	color: whitesmoke;
+	font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 24px;
+}
+
+.dark {
+	color: #262526;
+}
+
+h2 {
+	color: #F2727D;
+	font-family: fave-script-pro, sans-serif;
+	font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+	text-align: center;
+}
+
+/* ------ HEADER ------ */
+
+header h1 {
+	letter-spacing: 1px;
+	line-height: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	display: inline-block;
+	padding: 10px 0 0 50px;
+	vertical-align: middle;
+}
+
+header h2 {
+	color: whitesmoke;
+	font-family: fave-script-pro, sans-serif;
+	font-weight: 700;
+    font-style: normal;
+    font-size: 150px;
+	line-height: 100px;
+	text-align: left;
+	padding-top: 125px;
+	padding-left: 50px;
+}
+
+header h2 span {
+	color: #F2727D;
+}
+
+nav {
+	float: right;
+	padding-right: 50px;
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 30px;
+	line-height: 30px;
+	padding-left: 40px;
+	vertical-align: middle;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: #F2B988;
+}
+
+#hero-img {
+	border: none;
+	background-image: url("../img/hero-01.png");
+	background-size: cover;
+	height: 725px;
+}
+
+
+/* ------ WORK ------ */
+#work {
+	border-top: #F2727D 3px solid;
+}
+#work img {
+	border: whitesmoke solid 1px;
+	box-sizing:border-box;
+	margin-bottom:  30px;
+	margin-top:  30px;
+	width: 100%;
+}
+
+#work .full-width {
+	max-width: 1200px;
+}
+.left {
+	padding: 0 5% 0 5%;
+	text-align: right;
+}
+
+.right {
+	padding: 0 5% 0 5%;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+/* ------ ABOUT ------ */
+#about .full-width {
+	max-width: 1200px;
+}
+
+#about .half-width {
+	width: 100%;
+	padding: 0 5% 0 5%;
+}
+
+#about {
+	background:url("../img/about-me.png"), #f2b988;
+	background-size: cover;
+}
+
+#about ul {
+	list-style: none;
+}
+
+#about ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #F2727D; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.5em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+}
+
+/* ------ CONTACT ------ */
+#contact .full-width {
+	max-width: 1200px;
+}
+
+#contact {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#contact h3 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#contact a {
+	color: #F2727D;
+	text-decoration: none;
+}
+
+#contact a:hover {
+	color: #F2B988;
+}
+
+#contact p {
+	padding: 0;
+	margin: 0;
+}
+
+#contact ul {
+	list-style: none;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+#contact ul li {
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 48px;	
+}
+
+#contact ul li a i{
+	color: #F2727D;
+
+}
+
+#contact ul li a i:hover {
+	color: #F2B988;
+
+}
+
+footer {
+	background: #585C73;
+	text-align: center;
+	padding: 5px 0 5px 0;	
+}
+
+/*---------- TABLET ----------*/
+/* Change the background colors below */
+
+@media (min-width: 768px) {
+    .half-width {
+    width: 50%;
+    }	
+	.third-width {
+    width: 33.3333%;
+    } 	
+	#about .half-width {
+	width: 50%;
+	}
+}
+
+
+/*---------- Desktops ----------*/
+@media (min-width: 1200px) {
+	.half-width {
+	width: 50%;
+	}	
+    .third-width {
+    width: 33.3333%;
+    }
+	#about .half-width {
+	width: 50%;
+	}
+	.left {
+	padding: 0 2% 0 5%;
+	}
+	.right {
+	padding: 0 5% 0 2%;
+}
+}
